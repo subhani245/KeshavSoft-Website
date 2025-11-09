@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | KeshavSoft</title>
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: linear-gradient(90deg, #0d6efd, #6610f2);
+    }
+    .navbar-brand span {
+      color: #ffc107;
+    }
+
+    /* Hero Section */
+    .contact-hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+                  url('https://images.unsplash.com/photo-1525182008055-f88b95ff7980?auto=format&fit=crop&w=1600&q=80') no-repeat center/cover;
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .contact-hero h1 {
+      color: #ffc107;
+    }
+
+    /* Sections */
+    section {
+      padding: 80px 0;
+    }
+
+    /* Form */
+    form {
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    form:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+    .form-control:focus {
+      border-color: #0d6efd;
+      box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    }
+
+    /* Buttons */
+    .btn-primary {
+      background-color: #6610f2;
+      border: none;
+    }
+    .btn-primary:hover {
+      background-color: #0d6efd;
+    }
+    .btn-light:hover {
+      background-color: #ffc107;
+      color: #000;
+    }
+
+    /* Contact Info Box */
+    .info-box {
+      background: white;
+      border-radius: 10px;
+      padding: 25px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .info-box:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Gradient Section */
+    .bg-gradient-custom {
+      background: linear-gradient(135deg, #0d6efd, #6610f2);
+      color: white;
+    }
+
+    /* Footer */
+    footer {
+      background: #111;
+      color: #ccc;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">KeshavSoft<span>.</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="text-light contact-hero">
+    <div class="container mt-5 text-center">
+      <h1 class="fw-bold display-5">Get in Touch</h1>
+      <p class="lead mt-3">
+        We'd love to hear from you! Reach out to KeshavSoft for project discussions, partnerships, or support.
+      </p>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="bg-light">
+    <div class="container">
+      <div class="row g-5 align-items-start">
+        <!-- Contact Form -->
+        <div class="col-lg-6">
+          <h3 class="fw-bold mb-4 text-primary">Send Us a Message</h3>
+          <form class="p-4 bg-white shadow-sm">
+            <div class="mb-3">
+              <label class="form-label fw-semibold">Full Name</label>
+              <input type="text" class="form-control" placeholder="Enter your full name" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-semibold">Email Address</label>
+              <input type="email" class="form-control" placeholder="Enter your email address" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-semibold">Message</label>
+              <textarea class="form-control" rows="4" placeholder="Type your message..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="col-lg-6">
+          <h3 class="fw-bold mb-4 text-primary">Contact Information</h3>
+          <div class="info-box shadow-sm">
+            <p><i class="bi bi-building text-primary me-2"></i><strong>KeshavSoft Technologies Pvt. Ltd.</strong></p>
+            <p><i class="bi bi-geo-alt text-primary me-2"></i>Kakinada, Andhra Pradesh, India</p>
+            <p><i class="bi bi-envelope text-primary me-2"></i>info@keshavsoft.com</p>
+            <p><i class="bi bi-globe text-primary me-2"></i>www.keshavsoft.com</p>
+            <p><i class="bi bi-clock text-primary me-2"></i>Mon – Sat: 10:00 AM – 8:00 PM</p>
+          </div>
+
+          <!-- Google Map -->
+          <div class="mt-4">
+            <iframe 
+              src="https://www.google.com/maps?q=Kakinada,Andhra+Pradesh,+India&output=embed"
+              width="100%" height="250" style="border:0; border-radius:10px;" 
+              allowfullscreen="" loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="bg-gradient-custom text-center py-5">
+    <div class="container">
+      <h2 class="fw-bold mb-3 text-warning">Let’s Collaborate!</h2>
+      <p class="mb-4">We’re excited to help bring your ideas to life. Reach out and start building something amazing with us.</p>
+      <a href="mailto:info@keshavsoft.com" class="btn btn-light btn-lg"><i class="bi bi-envelope me-2"></i>Email Us</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-4">
+    <div class="container">
+      <p class="mb-1">&copy; 2025 KeshavSoft | All Rights Reserved</p>
+      <p class="small text-secondary">Built with ❤️ using HTML5, CSS3, and Bootstrap 5</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
