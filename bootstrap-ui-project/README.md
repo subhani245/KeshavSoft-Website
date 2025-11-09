@@ -5,7 +5,7 @@ This project was built as part of my internship task to explore Bootstrap 5, rem
 
 ## Tools Used
 - HTML5
-- CSS3
+- CSS3 
 - Bootstrap 5 (via CDN)
 - GitHub for version control
 - GitHub Pages for deployment
