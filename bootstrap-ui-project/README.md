@@ -30,4 +30,4 @@ This project was built as part of my internship task to explore Bootstrap 5, rem
 Approx. 10 hours (over 2 days)
 
 ## Live Link
-(https://subhani245.github.io/bootstrap-ui-project/)
+(https://subhani245.github.io/KeshavSoft-Website/bootstrap-ui-project/)
